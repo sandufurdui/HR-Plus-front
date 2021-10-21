@@ -1,17 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Signin from './components/signin';
-import Calendar from "./pages/calendar"
-import Signup from "./pages/signup"
+
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import UserDashboard from './pages/UserDashboard';
+import './style/calendar.css';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Signin />
-      <Signup />
-      <Calendar />
+      {/* <UserDashboard /> */}
+      <Calendar view="day" className="main_calendar" tileClassName="tile_date"/>
 
     </div>
   );
