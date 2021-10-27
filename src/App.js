@@ -1,19 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Signin from './components/signin';
+import 'react-calendar/dist/Calendar.css';
+import "./style/calendar.css"
+import Auth from "./pages/auth"
 import Calendar from "./pages/calendar"
-import Signup from "./pages/signup"
 
 
 
-function App() {
+function App({Component}) {
   return (
-    <div className="App">
-      <Signin />
-      <Signup />
+    <>
+      <Auth />
       <Calendar />
-
-    </div>
+    </>
   );
 }
 

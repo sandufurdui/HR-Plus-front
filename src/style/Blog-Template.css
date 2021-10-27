@@ -1,3 +1,33 @@
+.choose{
+  padding-top: 15%;
+}
+.employee{
+  margin-right: 100px;
+}
+
+.welcome{
+  color:#2d3a56;
+  font-weight: 800; 
+}
+
+.clear{
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+}
+
+.choose_button{
+  height: 40px;
+  width: 150px;
+  background-color: #e2474b !important;
+  color:white;
+  border: 0px solid;
+  border-radius: 10px;
+}
+
 .u-section-1 .u-sheet-1 {
   min-height: 561px;
 }
@@ -20,8 +50,10 @@
 }
 
 .u-section-1 .u-text-1 {
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .u-section-1 .u-image-1 {
