@@ -54,6 +54,6 @@
 }
 
 .react-calendar__tile:enabled:hover,.react-calendar__tile:enabled:focus {
-  background-color: #2d3a56;
+  background-color: #d8e8e8;
   color: white;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import SignIn from "./signinComp"
-import SignUp from "./signupComp"
+import SignIn from "./admSignInComp"
 import EmployeeAuth from "./employeeAuth"
 import Logo from '../images/HR-app_logo.svg';
 
@@ -12,17 +11,17 @@ export class auth extends Component {
             showEmployee: false,
             showAdmin: false,
         };
-        this._onButtonClick1 = this._onButtonClick1.bind(this);
-        this._onButtonClick2 = this._onButtonClick2.bind(this);
+        this.EmployeeChoose = this.EmployeeChoose.bind(this);
+        this.AdminChoose = this.AdminChoose.bind(this);
     }
     
-      _onButtonClick1() {
+      EmployeeChoose() {
         this.setState({
           showEmployee: true,
           showChoose: false,
         });
       }
-      _onButtonClick2() {
+      AdminChoose() {
         this.setState({
           showAdmin: true,
           showChoose: false,
@@ -35,14 +34,16 @@ export class auth extends Component {
                 <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-c036">
                 <div class="u-clearfix u-sheet u-sheet-1">
                     <div class="clear u-align-center u-container-style u-custom-color-1 u-group u-radius-50 u-shape-round u-group-1">
-                        <div class="u-container-layout u-container-layout-1 clear">
+                        <div>
                             <div>
                                 <h3 class="u-text u-text-default u-text-1 welcome">Welcome to</h3>
-                                <img class="logo" src={Logo} />
+                                <div className="centered-content">
+                                  <img class="logo" src={Logo} />
+                                </div>  
                             </div>
-                            <div class="choose">
-                                <button class="employee choose_button" onClick={this._onButtonClick1}>Employee</button>
-                                <button class="choose_button" onClick={this._onButtonClick2} >Admin</button> 
+                            <div class="choose centered-content">
+                                <button class="employee choose_button" onClick={this.EmployeeChoose}>Employee</button>
+                                <button class="choose_button" onClick={this.AdminChoose} >Admin</button> 
                             </div>
                         </div>
                     </div>

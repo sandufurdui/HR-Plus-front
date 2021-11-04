@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import SignIn from "./signinComp"
+import "../style/Home.css"
+import SignIn from "./usrSigninComp"
 import SignUp from "./signupComp"
 
 export class employee extends Component {
@@ -10,17 +11,17 @@ export class employee extends Component {
             showSignIn: false,
             showSignUp: false,
         };
-        this._onButtonClick1 = this._onButtonClick1.bind(this);
-        this._onButtonClick2 = this._onButtonClick2.bind(this);
+        this.SignInChosen = this.SignInChosen.bind(this);
+        this.SignUpChoosen = this.SignUpChoosen.bind(this);
     }
     
-      _onButtonClick1() {
+      SignInChosen() {
         this.setState({
           showSignIn: true,
           showChoose: false,
         });
       }
-      _onButtonClick2() {
+      SignUpChoosen() {
         this.setState({
           showSignUp: true,
           showChoose: false,
@@ -28,7 +29,7 @@ export class employee extends Component {
       }
     render() {
         return (
-            <div>{this.state.showChoose ? (
+            <div>{this.state.showChoose ? ( 
                 <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-c036">
                 <div class="u-clearfix u-sheet u-sheet-1">
                     <div class="u-align-center u-container-style u-custom-color-1 u-group u-radius-50 u-shape-round u-group-1">
@@ -36,9 +37,9 @@ export class employee extends Component {
                             <div>
                                 <h3 class="u-text u-text-default u-text-1"></h3>
                             </div>
-                            <div class="choose">
-                                <button class="employee choose_button" onClick={this._onButtonClick1}>SignIn</button>
-                                <button class="choose_button" onClick={this._onButtonClick2} >SignUp</button> 
+                            <div class="choose centered-content">
+                                <button class="employee choose_button" onClick={this.SignInChosen}>Sign in</button>
+                                <button class="choose_button" onClick={this.SignUpChoosen} >Sign up</button> 
                             </div>
                         </div>
                     </div>
