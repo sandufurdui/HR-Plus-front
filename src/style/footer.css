@@ -4,16 +4,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    position: fixed;
     background-color: #2d3a56;
     color: white;
     padding: 5px 30px 20px 50px;
     font-size: 0.8em;
-    height: 70px;
+    height: auto !important;
 }
 
-img {
-    width: 30px;
+img.logo {
+    width: 300px !important;
 }
 
 .logo {
@@ -47,5 +46,3 @@ h3 {
     margin-bottom: 5px;
     font-size: 1.5em;
 }
-
-

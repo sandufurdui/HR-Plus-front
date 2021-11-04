@@ -1,18 +1,16 @@
-
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import UserDashboard from './pages/UserDashboard';
-import './style/calendar.css';
+import "./style/calendar.css"
+import Auth from "./pages/auth"
+import Calendar from "./pages/calendar"
 
 
 
-function App() {
+function App({Component}) {
   return (
-    <div className="App">
-      {/* <UserDashboard /> */}
-      <Calendar view="day" className="main_calendar" tileClassName="tile_date"/>
-
-    </div>
+    <>
+      <Auth />
+      <Calendar />
+    </>
   );
 }
 
