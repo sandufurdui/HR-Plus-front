@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import SignIn from "./admSignInComp"
 import EmployeeAuth from "./employeeAuth"
 import Logo from '../images/HR-app_logo.svg';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {button } from 'react-router-dom'
+import App from "../App"
 
 export class auth extends Component {
     constructor(props) {
@@ -27,6 +30,7 @@ export class auth extends Component {
           showChoose: false,
         });
       }
+      
     render() {
         
         return( 
@@ -42,7 +46,7 @@ export class auth extends Component {
                                 </div>  
                             </div>
                             <div class="choose centered-content">
-                                <button class="employee choose_button" onClick={this.EmployeeChoose}>Employee</button>
+                                <button  class="employee choose_button" onClick={this.EmployeeChoose}>Employee</button>
                                 <button class="choose_button" onClick={this.AdminChoose} >Admin</button> 
                             </div>
                         </div>
