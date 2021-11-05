@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HRplus</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./style/meeting.css" />
+    <link href="//db.onlinewebfonts.com/c/6061c980f1f3f9420e1829c57a44cd23?family=Gilroy+Heavy" rel="stylesheet" type="text/css"/>
+ </head>
+    <body>
+    <div class="container-meeting" scroll="no" style="overflow: hidden">
+      <div class="meeting-div">
+        <form class="meeting-form">
+          <label>
+            <input
+              type="text"
+              id="text"
+              name="text"
+              placeholder="Meeting name"
+              required
+            />
+          </label>
+          <p class="meeting-time-box text-color text-size">
+            Meeting Time & Duration
+          </p>
+          <div class="date style">
+            <p class="date-select text-color text-size">Date</p>
+            <select name="day" id="day"></select>
+            <select name="month" id="month"></select>
+            <select name="year" id="year"></select>
+          </div>
+          <div class="time style">
+            <p class="time-duration text-color text-size">Time Duration</p>
+            <select name="hours" id="hours" placeholder="Hours"></select>
+          </div>
+          <p class="meeting-notes text-color text-size ">Meeting Notes</p>
+          <textarea class="notes" placeholder="Notes.. "></textarea>
+          <div class="interview-box right">
+            <label for="interview" class="text-color right">Interview</label>
+            <label class="myCheckbox right">
+              <input type="checkbox" class="checkbox right" name="interview" />
+              <!-- <span></span> -->
+            </label>
+          </div>
+          <button type="submit" id="meeting-button" value="Submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="./components/datePicker.js"></script>
+</html>

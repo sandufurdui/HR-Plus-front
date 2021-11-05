@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HRplus</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./style/training.css" />
+    <link href="//db.onlinewebfonts.com/c/6061c980f1f3f9420e1829c57a44cd23?family=Gilroy+Heavy" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <div class="container-training" scroll="no" style="overflow: hidden">
+        <div class="training-div">
+            <form class="training-form">
+                <p class="name">Company_name Training Detalis</p>
+                <p class="meeting-time-box text-color text-size size">
+                    Training Time & Duration
+                </p>
+                <div class="date size">
+                    <p class="date-select text-color text-size">Date</p>
+                    <select name="day" id="day" class="select-style"></select>
+                    <select name="month" id="month" class="select-style"></select>
+                    <select name="year" id="year" class="select-style"></select>
+                </div>
+                <div class="time size">
+                    <p class="time-duration text-color text-size">Instruction Hours</p>
+                    <select name="instruction-hours" id="hours" class="select-style select-width" ></select>
+                </div>
+                <div class="length display-style size">
+                    <p class="tr-length text-color text-size">Training Length</p>
+                    <select name="training-length" id="hours" class="select-style select-width"></select>
+                </div>
+                <p class="meeting-notes text-color text-size ">Trainer(s) Information</p>
+                <div class="trainers-assigned display-style2 display-style size">
+                    <p class="assigned text-color text-size">Trainers Assigned</p>
+                    <select name="trainers-assigned" id="hours" class="select-style select-width"></select>
+                </div>
+                <div class="trainers-pay-rate display-style size">
+                    <p class="pay-rate text-color text-size">Trainers Pay Rate</p>
+                    <input type="text" name="hours" id="hours" class="pay input-style" placeholder="0.00">
+                </div>
+                <p class="final-costs text-color text-size">Final Costs</p>
+                <div class="costs display-style size">
+                    <p class="training-costs text-color text-size">Training Costs</p>
+                    <input type="text" name="costs" id="costs" class="tr-costs input-style" placeholder="0.00">
+                </div>
+                <button type="submit" id="training-button" value="Submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="./components/datePicker.js"></script>
+
+</html>
