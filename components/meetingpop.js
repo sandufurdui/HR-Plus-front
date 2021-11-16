@@ -7,7 +7,9 @@ function meetingpop() {
             <div class="popup">
                 <div class="pop-div">
                     <h2 />
-                    <a class="close" href="#">&times;</a>
+                    <a class="close" href="#">
+                        &times;
+                    </a>
                     <form class="meeting-form">
                         <div class="content">
                             <input
@@ -18,24 +20,21 @@ function meetingpop() {
                                 placeholder="Meeting name"
                                 required
                             />
-                            <div>
-                                <p class=" text-color text-size">Date</p>
-                                <input type="date" name="date" class="date-box" required />
-                            </div>
-                            <div>
-                                <p class=" text-color text-size">Time Duration</p>
-                                <input
-                                    type="number"
-                                    name="date"
-                                    class="time-input"
-                                    max="10"
-                                    min="1"
-                                    placeholder="hours"
-                                    required
-                                />
-                            </div>
-                            <p class=" text-color text-size ">Meeting Notes</p>
-                            <textarea class="notes" placeholder="Notes.. "></textarea>
+                            <p class=" text-color text-size"> Date </p>
+                            <input type="date" name="date" class="date-box" required />
+                            <p class=" text-color text-size"> Time Duration </p>
+                            <input
+                                type="number"
+                                name="date"
+                                class="time-input"
+                                max="10"
+                                min="1"
+                                placeholder="hours"
+                                required
+                            />
+                            <p class=" text-color text-size "> Meeting Notes </p>
+                            <textarea class="notes" placeholder="Notes.. ">
+                            </textarea>
                             <div class="checkbox-div ">
                                 <div class="myCheckbox text-color ">
                                     Interview

@@ -8,7 +8,7 @@ import Sample from "./temp/sample"
 function App({Component}) {
   return (
       <div class="bg-adv-color">
-        <Sample />
+        <Router />
       </div>
   );
 }

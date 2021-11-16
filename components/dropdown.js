@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import Turnover from "./turnover"
-import Meeting from "./meetingpop"
+import React, { Component } from "react";
+import Turnover from "./turnover";
+import Meeting from "./meetingpop";
+import "../style/pop.css"
 
 export class dropdown extends Component {
     constructor(props) {
@@ -17,50 +18,50 @@ export class dropdown extends Component {
         this.trainingPop = this.trainingPop.bind(this);
         this.meetingPop = this.meetingPop.bind(this);
     }
-    
+
     TurnoverPop() {
         this.setState({
-          showTurnover: true,
+            showTurnover: true,
         });
     }
 
     hideTurnoverPop() {
         this.setState({
-          showTurnover: false,
+            showTurnover: false,
         });
     }
 
-    replacementPop(){
+    replacementPop() {
         this.setState({
             showReplacement: true,
-        })
+        });
     }
 
-    hideReplacementPop(){
+    hideReplacementPop() {
         this.setState({
             showReplacement: false,
-        })
+        });
     }
 
-    trainingPop(){
+    trainingPop() {
         this.setState({
             showTraining: true,
         });
     }
 
-    hideTrainingPop(){
+    hideTrainingPop() {
         this.setState({
             showTraining: false,
         });
     }
 
-    meetingPop(){
+    meetingPop() {
         this.setState({
             showMeeting: true,
         });
     }
 
-    hideMeetingPop(){
+    hideMeetingPop() {
         this.setState({
             showMeeting: false,
         });
@@ -68,44 +69,46 @@ export class dropdown extends Component {
 
     render() {
         return (
-            <div>{this.state.showAdmin ? (
-                <div class="dropdown">
-                        <button class="dropbtn">some fun actions</button>
+            <div>
+
+                {this.state.showAdmin ? (
+                    <div class="dropdown">
+                        <button class="dropbtn"> some fun actions </button>
                         <div class="dropdown-content">
-                            <a class="dark-bg" onClick={this.replacementPop}>+ add replacement </a>
-                            <a class="dark-bg" onClick={this.TurnoverPop}>+ add turnover </a>
-                            <a class="dark-bg" onClick={this.trainingPop}>+ add training </a>
-                            <a class="dark-bg" onClick={this.TurnoverPop}>+ add turnover </a>
-                            <a class="dark-bg "  href="#addmeet" onClick={this.meetingPop}>+ add meeting </a>
+                            <a class="dark-bg" onClick={this.replacementPop}>
+
+                                +add replacement
+                            </a>
+                            <a class="dark-bg" onClick={this.TurnoverPop}>
+
+                                +add turnover
+                            </a>
+                            <a class="dark-bg" onClick={this.trainingPop}>
+
+                                +add training
+                            </a>
+                            <a class="dark-bg" onClick={this.TurnoverPop}>
+
+                                +add turnover
+                            </a>
+                            <a class="dark-bg " href="#addmeet" onClick={this.meetingPop}>
+
+                                +add meeting
+                            </a>
                         </div>
                     </div>
-                    ) : (
-                null
-                )}
-
-                {this.state.showReplacement ?
-                    <div>this will be replacement pop-up</div> :
-                    null
-                }
-
-                {this.state.showTraining ?
-                <div>this will be training pop-up</div> :
-                null
-                }
-
-                {this.state.showMeeting ?
-                    <Meeting /> :
-                null
-                }
-
-                {this.state.showTurnover ?
-                    <Turnover /> :
-                null
-                }
-
+                ) : null}
+                {this.state.showReplacement ? (
+                    <div> this will be replacement pop - up </div>
+                ) : null}
+                {this.state.showTraining ? (
+                    <div> this will be training pop - up </div>
+                ) : null}
+                {this.state.showMeeting ? <Meeting /> : null}
+                {this.state.showTurnover ? <Turnover /> : null}
             </div>
-        )
+        );
     }
 }
 
-export default dropdown
+export default dropdown;
