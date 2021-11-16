@@ -1,145 +1,175 @@
 .meeting-div{
-    padding:20px;
+    padding:40px;
     margin-left:auto;
     margin-right:auto;
-    height:500px;
     max-width:calc(var(--size-form-register) / 1.5);
     width:35vw;
     border-radius: 25px;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* justify-content:center; */
+    justify-content:center;
     background:#406d96;
     box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.39);
 }
 
-.meeting-form{  
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    /* align-items:center; */
-
+.meeting-form {
+    max-width: 100% !important;
 }
-
-.container-meeting{
-    display:flex;
-    flex-direction: column;
-    width:100vw;
-    height:100vh;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.meeting-form label input{
-    max-width:calc(var(--size-form-meeting) / 1.6);  
-    margin:10px;
-    padding:5px;
-    border: 1px solid rgb(255, 255, 255);
-   border-radius: 8px;
-   font-size:1em;
-   
-}
-button[type=submit]{   
-    cursor: pointer; 
-    width:120px;
-    height:1.7em;
-    font-size:1.6em;
-    font-family: 'Gilroy', sans-serif;
-    border-radius: 10px;
-    color: white;
-    background:#e2474b;
-    border:solid 1px #e2474b;
-    margin-top:20px;
-    margin:auto;
-  display:block;
-
-}
-
-.meeting-form label input{
-    max-width:calc(var(--size-form-register) / 3.3);
-    width:30vw;
-    /* margin-left: -5px;
-    margin-right: -5px;    */
-    margin-top: 10px !important;
-    margin:auto;
-  display:block;
-}
-
-body{
-   margin:0;
-   padding:0;
-   font-family: 'Gilroy', sans-serif;
-   
-}
-button[type="submit"]:hover{
-    box-shadow: 0px 0px 12px 3px rgba(206, 53, 53, 0.62);
-}
-
 .text-color {
     color: white;
 }
 
-.meeting-time-box{
-    padding-left: 18px;
-    font-size: 1.2em;
+.time-input {
+    height: 35px;
+    border-radius: 8px;
+    border: 1px white;
+    width: 90px;
+    padding: 0 10px;
 }
-
 .text-size {
     font-size: 1.2em;
-    padding-left: 18px;
-}
-
-.date .time {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: baseline;
-}
-
-.notes {
-    height: 110px;
-    border-radius: 8px;
-}
-
-.style {
-    margin-top: -15px;
+    /* padding-left: 18px; */
 }
 
 .myCheckbox {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    /* justify-content: flex-end; */
-    width:120px;
-    height:30px;
-    margin:0px 0 20px 22vw ;
-    padding:5px;
-    /* margin-left: 22vw;
-   margin-right: 0; */
-   font-size:0.9em;
+    justify-content: flex-end;
+   
 }
 
-input[type=checkbox] {
-    height: 20px;
-}
-
-.meeting-name {
+.checkbox-div {
     height: 30px !important;
+    padding: 10px 30px;
+    margin-bottom: 30px;
 }
 
-.hours {
-    border-radius: 7px;
-    border: 1px white;
-    width: 5vw;
-    height: 25px;
-    padding-left: 5px;
+.checkbox-input {
+    margin-left: 10px;
 }
 
 .date-box {
     border-radius: 6px;
     border: 1px white;
+    height: 35px;
+    padding: 0 10px;
+}
+
+.box {
+
+    width: 40%;
+
+    margin: 0 auto;
+
+    background: rgba(255,255,255,0.2);
+
+ 
+
+    border: 2px solid #fff;
+
+    border-radius: 20px/50px;
+
+    background-clip: padding-box;
+
+    text-align: center;
+
+  }
+
+ 
+
+ 
+
+  .overlay {
+
+    position: fixed;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    transition: opacity 500ms;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+  }
+
+  .overlay:target {
+
+    visibility: visible;
+
+    opacity: 1;
+
+  }
+
+
+  .popup h2 {
+
+    margin-top: 0;
+
+    color: #333;
+
+    font-family: Tahoma, Arial, sans-serif;
+
+  }
+
+  .popup .close {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    transition: all 200ms;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #333;
+
+  }
+
+  .popup .close:hover {
+
+    color: #ff0000;
+
+  }
+
+  .popup .content {
+
+    max-height: 30%;
+
+    overflow: auto;
+
+  }
+
+  .notes {
+
+    border-radius: 8px;
+
+    width: 95%;
+
+    height: 150px;
+
+    min-height: 100px;
+
+    max-height: 200px;
+
+    max-width: 100% !important;
+
+    padding: 10px;
+
 }

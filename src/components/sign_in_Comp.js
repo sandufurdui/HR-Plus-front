@@ -14,7 +14,7 @@ function sign_in_Comp() {
                 <input type="password" name="password" id="password" placeholder="Password" />
               </label>
            
-              <input type="submit"  id="sign-in-button" value="Sign In" />
+              <button type="submit"   id="sign-in-button" value="Sign In" />
             </form>
           </div>  
         </div> 

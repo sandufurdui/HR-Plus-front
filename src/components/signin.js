@@ -2,7 +2,6 @@ import React from 'react'
 import "../style/Blog-Template.css"
 import "../style/Home.css"
 import "../style/Post-Template.css"
-import "../style/nicepage.css"
 
 function signin() {
     return (
