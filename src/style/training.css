@@ -1,102 +1,15 @@
-.training-div{
-    /* padding:20px; */
-    margin-left:auto;
-    margin-right:auto;
-    height:520px;
-    /* max-width:calc(var(--size-form-register) / 1.5); */
-    width:350px;
-    border-radius: 25px;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
-    background:#406d96;
-    box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.39);
-}
-
-.training-form{  
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    /* align-items:center; */
-
-}
-
-.container-training {
-    display:flex;
-    flex-direction: column;
-    width:100vw;
-    height:100vh;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-
-button[type=submit]{   
-    cursor: pointer; 
-    width:120px;
-    height:1.7em;
-    font-size:1.5em;
-    font-family: 'Gilroy', sans-serif;
-    border-radius: 10px;
-    color: white;
-    background:#e2474b;
-    border:solid 1px #e2474b;
-    margin-top:20px;
-    margin:auto;
-  display:block;
-
-}
-.training-form label input{
-    max-width:calc(var(--size-form-training) / 3.3);
-    width:33vw;
-    margin-left: -5px;
-    margin-right: -5px;   
-}
-
-
-body{
-   margin:0;
-   padding:0;
-   font-family: 'Gilroy', sans-serif;
-   
-}
-
-button[type="submit"]:hover{
-    box-shadow: 0px 0px 12px 3px rgba(206, 53, 53, 0.62);
-}
-
-.text-color {
-    color: white;
-}
-
-.meeting-time-box{
-    padding-left: 18px;
-    font-size: 1.2em;
-   
+.pop-width{
+    width:24vw !important;
 }
 
 .text-size {
     font-size: 1.05em;
-    padding-left: 18px;
 }
 
-
-.time, .costs, .date {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: baseline;
+.text-design {
+    font-weight: bold;
 }
 
-.notes {
-    height: 110px;
-    border-radius: 8px;
-}
-   
 
 .display-style {
     display: flex;
@@ -106,12 +19,14 @@ button[type="submit"]:hover{
 }
 
 .date-input {
-    border-radius: 5px;
-    border: 1px solid white;
+    border-radius: 6px;
+    border: 1px white;
+    height: 28px;
+    padding: 0 10px;
 }
 
-.input-style {
-    height: 25px;
+.input-design {
+    height: 23px;
     border-radius: 5px;
     border: 1px solid white;
     width: 65px;
@@ -120,12 +35,11 @@ button[type="submit"]:hover{
 
 .company-name {
     color: #e2474b;
-    padding-left: 20px;
     font-size: 1.05em;
-    margin-bottom: -30px;
+
 }
 
-.size {
-    margin-top: -25px;
-  
+.button-design {
+    margin-top: 20px !important;
 }
+
