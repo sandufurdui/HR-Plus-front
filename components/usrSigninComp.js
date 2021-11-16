@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import "../style/sign_in.css"
 import UserDashboard from "../pages/user_dashboard"
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 export class usrSigninComp extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export class usrSigninComp extends Component {
   }
   render() {
     return (
-    <div>{this.state.showSignIn ? ( 
+    <div>
         <div class="container-sign-in">
           <div><h1 class="sign-in-title">Sign in</h1> </div>
           <div class="sign-in-div">
@@ -29,21 +30,13 @@ export class usrSigninComp extends Component {
                 <input type="email" id="email" name="email" placeholder="Email"  required/>
               </label>
               <label>
-                <input type="password" name="password" id="password" placeholder="Password" />
+                <input type="password" name="password" id="password" placeholder="Password" required/>
               </label>
-              <button type="submit"  id="sign-in-button" value="Sign In" onClick={this.ShowUserDashboard}>Sign in</button>
+              <a href="/userDashboard" type="submit"  id="sign-in-button" value="Sign In">Sign in</a>
             </form>
           </div> 
           </div>
-          ) : (
-                null
-              )}
-                
-            {this.state.showDashboard ?
-               <UserDashboard /> :
-               null
-            }
-        </div>
+    </div>
     )
 }
 

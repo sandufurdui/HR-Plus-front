@@ -53,7 +53,7 @@
     padding-left: 20px;
 }
 
-.turnover-form label input, .employee{
+.turnover-form label input{
     max-width:calc(var(--size-form-register) / 1.6);
     width:40vw;
     height:35px;
@@ -64,7 +64,7 @@
    font-size:1em;
    
 }
-button[type=submit]{   
+a[type=submit]{   
     cursor: pointer; 
     width:140px;
     height:1.9em;
@@ -90,6 +90,6 @@ body{
    padding:0;
    font-family: 'Dosis', sans-serif;
 }
-button[type="submit"]:hover{
+a[type="submit"]:hover{
     box-shadow: 0px 0px 12px 3px rgba(206, 53, 53, 0.62);
 }

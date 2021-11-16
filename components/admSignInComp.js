@@ -1,26 +1,23 @@
 import React, { Component } from 'react'
 import "../style/sign_in.css"
 import AdminPanel from "./adminPanel"
+import {
+  Link
+} from "react-router-dom";
 
 export class admSignInComp extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showSignIn: true,
-            showAdminPanel: false,
+            adminPanelRoute: "/adminPanel",
         };
-        this.OpenAdminPanel = this.OpenAdminPanel.bind(this);
     }
+
     
-    OpenAdminPanel() {
-        this.setState({
-          showAdminPanel: true,
-          showSignIn: false,
-        });
-      }
+    
     render() {
         return (
-                <div>{this.state.showSignIn ? (
+                <div>
                     <div class="container-sign-in">
                     <div><h1 class="sign-in-title">Sign in</h1> </div>
                     <div class="sign-in-div">
@@ -29,21 +26,13 @@ export class admSignInComp extends Component {
                           <input type="email" id="email" name="email" placeholder="Email"  required/>
                         </label>
                         <label>
-                          <input type="password" name="password" id="password" placeholder="Password" />
+                          <input type="password" name="password" id="password" placeholder="Password" required/>
                         </label>
-                        <button type="submit"  id="sign-in-button" value="Sign In" onClick={this.OpenAdminPanel}>Sign in</button>
+                        <Link to="/adminPanel" type="submit"  id="sign-in-button" value="Sign In">Sign in</Link>
                       </form>
                     </div>  
                   </div> 
-                    ) : (
-                        null
-                      )}
-                        
-                    {this.state.showAdminPanel ?
-                       <AdminPanel /> :
-                       null
-                    }
-                    </div>
+                </div>
         )
     }
 }

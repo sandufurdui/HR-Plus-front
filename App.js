@@ -1,29 +1,14 @@
 import "./style/main.css"
-import Auth from "./pages/auth"
-import Admin from "./components/adminPanel"
+import Router from "./components/router"
+import UserDashboard from "./components/CalendarComp"
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Test from "../src/test"
+import Sample from "./temp/sample"
 
 function App({Component}) {
   return (
       <div class="bg-adv-color">
-        
-        <ul>
-          <li><a href="/Admin">Admin</a></li>
-          <li><a href="/Auth">Auth</a></li>
-          <li><a href="/Huinea">Huinea</a></li>
-        </ul>
-        <BrowserRouter>
-        <Switch>
-          <Route path="/Admin">
-            <Admin />
-          </Route>
-          <Route path="/Auth">
-            <Auth />
-          </Route>
-          <Route path="/Huinea">
-          </Route>
-        </Switch>
-        </BrowserRouter>
+        <Sample />
       </div>
   );
 }

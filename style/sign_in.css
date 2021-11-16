@@ -13,7 +13,7 @@
     padding:20px;
     margin-left:auto;
     margin-right:auto;
-    height:270px;
+    min-height: 250px;
     max-width:calc(var(--size-form-register) / 1.5);
     width:45vw;
     border-radius: 25px;
@@ -54,7 +54,7 @@
    font-size:1em;
    
 }
-input[type=submit]{   
+Link[type=submit]{   
     cursor: pointer; 
     width:140px;
     height:1.9em;

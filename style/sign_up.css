@@ -1,3 +1,7 @@
+.red-alert{
+    color: red;
+    font-size: 11px;
+}
 
 .register-title{
     font-family: 'Sansita', sans-serif;
@@ -14,7 +18,8 @@
     padding:20px;
     margin-left:auto;
     margin-right:auto;
-    height:550px;
+    margin-bottom: 100px;
+    height:auto;
     max-width:calc(var(--size-form-register) / 1.5);
     width:45vw;
     border-radius: 25px;
@@ -40,7 +45,6 @@
     display:flex;
     flex-direction: column;
     width:100vw;
-    height:100vh;
     margin-left:auto;
     margin-right:auto;
 }
@@ -55,6 +59,26 @@
    font-size:1em;
    
 }
+a[type=submit]{   
+    cursor: pointer; 
+    width:140px;
+    height:1.9em;
+    font-size:1.6em;
+    font-family: 'Sansita', sans-serif;
+    border-radius: 10px;
+    color: white;
+    background:#e2474b;
+    border:solid 1px #e2474b;
+    margin-top:20px;
+    text-align: center;
+    padding-top: 0.4em;
+
+}
+
+.chakra-form-control {
+    min-height: 100px;
+}
+
 button[type=submit]{   
     cursor: pointer; 
     width:140px;
@@ -68,6 +92,7 @@ button[type=submit]{
     margin-top:20px;
 
 }
+
 .register-form {
     max-width:calc(var(--size-form-register) / 3.3);
     width:33vw;
@@ -81,6 +106,6 @@ body{
    padding:0;
    font-family: 'Dosis', sans-serif;
 }
-button[type="submit"]:hover{
+a[type="submit"]:hover{
     box-shadow: 0px 0px 12px 3px rgba(206, 53, 53, 0.62);
 }
