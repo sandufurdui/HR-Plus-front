@@ -4,6 +4,7 @@ import Meeting from './components/meeting_pop_up'
 import Training from './components/training_pop_up'
 import Turnover from './components/turnover_pop_up'
 import Replacement from "./components/replacement";
+import Employee from "./components/add_employee_pop_up"
 import "./style/main.css"
 import "./style/pop.css"
 
@@ -35,6 +36,10 @@ function App({ Component }) {
             +add replacement
         </a>
         <Replacement />
+        <a class="dark-bg" href="#addemployee">
+            +add employee
+        </a>
+        <Employee />
     </div>
   </div>
   );
