@@ -2,9 +2,11 @@ import React from 'react'
 import Turnover from "../components/turnover_pop_up"
 import Training from"../components/training_pop_up"
 import Meeting from "../components/meeting_pop_up"
+import Replacement from "../components/replacement"
 import "../style/turnover.css"
 import "../style/training.css"
 import "../style/meeting.css"
+import "../style/replacement.css"
 
 function sample() {
     return (
@@ -34,6 +36,15 @@ function sample() {
                         <h2 />
                         <a class="dark-bg button"  href="#addtraining" >+ add turnover </a>
                           <Training /> 
+                    </div>
+                </div>
+            </div>
+            <div id="replacement" class="overlay">{/*change id to the respective meed name*/}
+                <div class="popup">
+                    <div class="pop-div">
+                        <h2 />
+                        <a class="dark-bg button"  href="#addreplacement" >+ add replacement </a>
+                          <Replacement /> 
                     </div>
                 </div>
             </div>

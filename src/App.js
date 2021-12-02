@@ -3,6 +3,7 @@ import React from "react";
 import Meeting from './components/meeting_pop_up'
 import Training from './components/training_pop_up'
 import Turnover from './components/turnover_pop_up'
+import Replacement from "./components/replacement";
 import "./style/main.css"
 import "./style/pop.css"
 
@@ -11,9 +12,10 @@ function App({ Component }) {
   <div>
     <button class="dropbtn"> some fun actions </button>
     <div class="dropdown-content">
-        <a class="dark-bg" >
+        {/* <a class="dark-bg" href="#addreplacement">
             +add replacement
         </a>
+        <Replacement /> */}
         <a class="dark-bg" >
             +add turnover
         </a>
@@ -29,6 +31,10 @@ function App({ Component }) {
             +add meeting
         </a>
         <Meeting />
+        <a class="dark-bg" href="#addreplacement">
+            +add replacement
+        </a>
+        <Replacement />
     </div>
   </div>
   );
